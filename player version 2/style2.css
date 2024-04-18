@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: poppins;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#container{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, hsla(185, 64%, 51%, 1) 0%, hsla(277, 74%, 24%, 1) 100%);
+    overflow: hidden;
+}
+#main{
+    height: 85%;
+    width: 100%;
+    display: flex;
+    padding: 2vw 4vw;
+    
+}
+#left{
+    height: 80%;
+    width: 45%;
+    border-radius: 10px;
+}
+#right{
+    height: 100%;
+    width: 55%;
+    border-radius: 10px;
+}
+#right h3{
+    padding: 20px 40px;
+    font-size: 20px;
+
+}
+
+#allaud{
+    height: 80%;
+    width: 80%;
+    margin-left: 60px;
+    border-radius: 20px;
+    overflow: auto;
+}
+.audiocard{
+    cursor: pointer;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    align-items: center;
+    padding: 0px 20px;
+}
+.audiocard:nth-child(1){
+    border-top:1px solid gray ;
+}
+.audiocard:hover{
+    background-color: rgb(40, 148, 183);
+}
+.audiocard .img{
+    display: flex;
+    align-items: center;
+}
+.audiocard img{
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+#name{
+    font-weight: 500;
+    
+}
+#play{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+}
+#play i{
+    margin-left: 35px;
+    cursor: pointer;
+}
+#play i:hover{
+    color: #7FFFD4;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 10px; /* Adjust scrollbar width */
+}
+
+/* Scrollbar Handle */
+::-webkit-scrollbar-thumb {
+    background-color: rgba(39, 238, 132, 0.5); /* Scrollbar handle color */
+    border-radius: 20px; /* Scrollbar handle border radius */
+}
+
+/* Scrollbar Handle on Hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Scrollbar handle color on hover */
+}
+
+
+#progress-container {
+    width: 90%;
+    height: 15px;
+    background-color: #ddd;
+    cursor: pointer;
+    position: relative;
+    margin: 0px auto;
+    border-radius: 2px;
+}
+
+#progress-bar {
+    height: 100%;
+    background-color: #007bff;
+    width: 0%; /* Will change with JavaScript */
+}
+#notes{
+    background-color: #ebf4f5;
+    height: 450px;
+    width: 750px;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+}
+#Visitnotes{
+    background-color: #DFFFFD;
+    width: 300px;
+    height: 60px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    color: #006D6F;
+    font-weight: 800;
+    font-size: 30px;
+    transition: 1s;
+    cursor: pointer;
+}
+#Visitnotes:hover{
+    background-color: #006D6F;
+    color: #DFFFFD;
+}
+#notes{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+#notes i{
+    font-size: 80px;
+    color: #88ABFF;
+    border: 2px dashed #88ABFF;
+    border-radius: 50%;
+    padding: 20px;
+    
+}
+
+#notes p{
+    margin-top: 30px;
+    color: black;
+}
+  
